@@ -1,0 +1,17 @@
+{
+  "name": "pkb",
+  "version": "1.0.0",
+  "description": "PKB 知识库网站（VitePress）",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.0"
+  },
+  "dependencies": {
+    "mermaid": "^11.17.2",
+    "vitepress-plugin-mermaid": "^2.0.17"
+  }
+}
