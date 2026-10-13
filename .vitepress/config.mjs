@@ -3,10 +3,10 @@ import { withMermaid } from 'vitepress-plugin-mermaid'
 
 export default withMermaid(defineConfig({
   lang: 'zh-CN',
-  title: 'PKB 知识库',
+  title: '个人知识库',
   description: '端侧 LLM 部署与智能体设计知识库',
-  srcDir: '.',
-  outDir: 'dist',
+  srcDir: '笔记',
+  outDir: 'docs',
   cleanUrls: true,
   lastUpdated: true,
 
@@ -14,11 +14,17 @@ export default withMermaid(defineConfig({
     mermaid: true,
   },
 
+  vite: {
+    optimizeDeps: {
+      include: ['mermaid', 'fastdom'],
+    },
+  },
+
   themeConfig: {
     nav: [
       { text: 'LLM 推理', link: '/LLM推理/' },
       { text: 'LLM 训练', link: '/LLM训练/' },
-      { text: '智能体设计', link: '/智能体设计/' },
+      { text: '智能体设计', link: '/agent设计/' },
       { text: '语音交互', link: '/语音交互/' },
     ],
 
@@ -45,14 +51,17 @@ export default withMermaid(defineConfig({
       },
       {
         text: '智能体设计',
-        link: '/智能体设计/',
+        link: '/agent设计/',
         items: [
-          { text: '智能体架构', link: '/智能体设计/智能体架构' },
-          { text: '身份与系统提示词', link: '/智能体设计/身份与系统提示词' },
-          { text: '工具与技能', link: '/智能体设计/工具与技能' },
-          { text: '记忆系统', link: '/智能体设计/记忆系统' },
-          { text: '上下文工程', link: '/智能体设计/上下文工程' },
-          { text: '定时与主动运行', link: '/智能体设计/定时与主动运行' },
+          { text: '智能体架构', link: '/agent设计/OpenClaw智能体架构' },
+          { text: '身份与系统提示词', link: '/agent设计/OpenClaw系统提示词' },
+          { text: '工具与技能', link: '/agent设计/OpenClaw工具与技能' },
+          { text: '记忆系统', link: '/agent设计/OpenClaw记忆系统' },
+          { text: '上下文工程', link: '/agent设计/OpenClaw上下文工程' },
+          { text: '定时与主动运行', link: '/agent设计/OpenClaw定时与主动运行' },
+          { text: 'LangGraph 流式输出', link: '/agent设计/LangGraph流式输出' },
+          { text: '多机器人运行时', link: '/agent设计/LangGraph+FastAPI多机器人设计' },
+          { text: '规划与执行', link: '/agent设计/LangGraph规划和执行' },
         ],
       },
       {

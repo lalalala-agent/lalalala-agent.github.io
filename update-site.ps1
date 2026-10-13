@@ -1,22 +1,20 @@
 # 一键构建并发布 PKB 知识库到 GitHub Pages
-# 用法：在 E:\work\pkb 目录下执行  .\update-site.ps1
-# 流程：构建站点 -> 同步产物 -> 提交 -> 推送，网站约 1~2 分钟后自动更新
+# 用法：改完 笔记/ 里的 Markdown 后，在 E:\work\pkb 目录执行  .\update-site.ps1
+# 流程：根据笔记生成网页到 docs/ -> 提交 -> 推送，网站约 1~2 分钟后自动更新
+# 仓库 Settings → Pages 的发布目录必须是 /docs
 $ErrorActionPreference = 'Stop'
 Set-Location $PSScriptRoot
 
-Write-Host '==> 1/4 构建站点...'
+Write-Host '==> 1/3 根据笔记构建网页到 docs ...'
 npm run build
 if ($LASTEXITCODE -ne 0) { throw '构建失败，请检查报错' }
 
-Write-Host '==> 2/4 同步构建产物到站点根目录...'
-Copy-Item -Path ".\dist\*" -Destination "." -Recurse -Force
-
-Write-Host '==> 3/4 提交变更...'
+Write-Host '==> 2/3 提交变更...'
 git add -A
 git commit -m "更新知识库 $(Get-Date -Format 'yyyy-MM-dd HH:mm')"
 if ($LASTEXITCODE -ne 0) { Write-Host '没有新变更需要提交，继续推送' }
 
-Write-Host '==> 4/4 推送到 GitHub...'
+Write-Host '==> 3/3 推送到 GitHub...'
 git push
 if ($LASTEXITCODE -ne 0) { throw '推送失败，请检查网络或登录状态' }
 

@@ -2,5 +2,7 @@ node_modules/
 dist/
 .vitepress/cache/
 .vitepress/dist/
+# docs/ 是构建出的网页，需要提交，不要忽略
 .DS_Store
 Thumbs.db
+temp.md
