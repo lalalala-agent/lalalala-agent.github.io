@@ -1,17 +1,36 @@
+html:not(.dark) .VPContent.is-home {
+  background: #fff;
+}
+
+.VPContent.is-home .VPHero {
+  padding-bottom: 8px;
+}
+
 .home-map {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  align-items: stretch;
+  gap: 20px;
   max-width: 1152px;
-  margin: 8px auto 72px;
+  margin: 12px auto 80px;
   padding: 0 24px;
 }
 
 .home-map section {
-  border: 1px solid var(--vp-c-divider);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eaeaea;
   border-radius: 12px;
-  padding: 18px 20px 8px;
-  background: var(--vp-c-bg-soft);
+  padding: 24px 24px 16px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.home-map section:hover {
+  transform: translateY(-2px);
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
 .home-map h2 {
@@ -23,6 +42,9 @@
 }
 
 .home-map h2 a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   color: var(--vp-c-text-1);
   font-weight: 600;
   text-decoration: none;
@@ -32,22 +54,35 @@
   color: var(--vp-c-brand-1);
 }
 
+.home-map .icon {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  color: var(--vp-c-text-3);
+}
+
+.home-map section:hover .icon,
+.home-map h2 a:hover .icon {
+  color: var(--vp-c-brand-1);
+}
+
 .home-map .lead {
-  margin: 6px 0 12px;
+  margin: 16px 0 8px;
   color: var(--vp-c-text-2);
   font-size: 13px;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 .home-map .label {
-  margin: 12px 0 0;
+  margin: 20px 0 2px;
   color: var(--vp-c-text-3);
   font-size: 12px;
   line-height: 1.4;
+  letter-spacing: 0.02em;
 }
 
 .home-map ul {
-  margin: 0;
+  margin: 4px 0 0;
   padding: 0;
   list-style: none;
 }
@@ -59,7 +94,7 @@
 
 .home-map li a {
   display: block;
-  padding: 8px 0;
+  padding: 11px 0;
   color: var(--vp-c-text-1);
   font-size: 14px;
   line-height: 1.5;
@@ -68,6 +103,17 @@
 
 .home-map li a:hover {
   color: var(--vp-c-brand-1);
+}
+
+.dark .home-map section {
+  border-color: var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.28);
+}
+
+.dark .home-map section:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 768px) {

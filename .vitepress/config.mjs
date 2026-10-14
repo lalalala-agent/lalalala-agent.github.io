@@ -22,33 +22,13 @@ export default withMermaid(defineConfig({
 
   themeConfig: {
     nav: [
-      { text: 'LLM 推理', link: '/LLM推理/' },
-      { text: 'LLM 训练', link: '/LLM训练/' },
       { text: '智能体设计', link: '/agent设计/' },
       { text: '语音交互', link: '/语音交互/' },
+      { text: 'LLM 推理', link: '/LLM推理/' },
+      { text: 'LLM 训练', link: '/LLM训练/' },
     ],
 
     sidebar: [
-      {
-        text: 'LLM 推理',
-        link: '/LLM推理/',
-        items: [
-          { text: 'vLLM 推理', link: '/LLM推理/vLLM推理' },
-          { text: 'KV 缓存与前缀缓存', link: '/LLM推理/KV缓存与前缀缓存' },
-          { text: 'Qwen3.5-4090 性能', link: '/LLM推理/Qwen3.5-4090性能' },
-          { text: 'RK3588 硬件', link: '/LLM推理/RK3588硬件' },
-          { text: 'RK3588 模型打包', link: '/LLM推理/RK3588模型打包' },
-          { text: 'Qwen3-VL 端侧性能', link: '/LLM推理/Qwen3-VL端侧性能' },
-        ],
-      },
-      {
-        text: 'LLM 训练',
-        link: '/LLM训练/',
-        items: [
-          { text: 'BERT 微调', link: '/LLM训练/BERT微调' },
-          { text: 'LoRA 微调', link: '/LLM训练/LoRA微调' },
-        ],
-      },
       {
         text: '智能体设计',
         link: '/agent设计/',
@@ -68,7 +48,28 @@ export default withMermaid(defineConfig({
         text: '语音交互',
         link: '/语音交互/',
         items: [
-          { text: '编写引导', link: '/语音交互/' },
+          { text: '声学硬件结构', link: '/语音交互/声学硬件结构' },
+        ],
+      },
+      {
+        text: 'LLM 推理',
+        link: '/LLM推理/',
+        items: [
+          { text: '显存、Block 与并发', link: '/LLM推理/vLLM 的显存、Block 与并发调度' },
+          { text: 'KV Cache 调度', link: '/LLM推理/KV Cache 与 Prefix Caching 的调度流程' },
+          { text: 'Prefix Caching', link: '/LLM推理/Prefix Caching' },
+          { text: 'Qwen3.8-27B 压测', link: '/LLM推理/Qwen3.8-27B并发压测报告' },
+          { text: 'RK3588 硬件', link: '/LLM推理/RK3588硬件' },
+          { text: 'RK3588 模型打包', link: '/LLM推理/RK3588模型打包' },
+          { text: 'Qwen3-VL 端侧性能', link: '/LLM推理/Qwen3-VL端侧性能' },
+        ],
+      },
+      {
+        text: 'LLM 训练',
+        link: '/LLM训练/',
+        items: [
+          { text: 'BERT 微调', link: '/LLM训练/BERT微调' },
+          { text: 'LoRA 微调', link: '/LLM训练/LoRA微调' },
         ],
       },
     ],

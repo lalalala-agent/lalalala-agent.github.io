@@ -3,33 +3,16 @@ layout: home
 
 hero:
   name: 个人知识库
-  tagline: 按问题查阅。每篇单独成立，先选栏目，再进一篇。
-  actions:
-    - theme: brand
-      text: 智能体设计
-      link: /agent设计/
-    - theme: alt
-      text: LLM 推理
-      link: /LLM推理/
-
-features:
-  - title: 智能体设计
-    details: 常驻运行时的架构、身份、记忆与主动运行，以及 LangGraph 的流式输出、多机器人和规划执行。
-    link: /agent设计/
-  - title: LLM 推理
-    details: vLLM 的 prefill 与缓存、4090 在线日志，以及 RK3588 上的打包和端侧性能。
-    link: /LLM推理/
-  - title: LLM 训练
-    details: BERT 做短文本分类，LoRA 做领域指令跟随，从语料写到交到推理服务。
-    link: /LLM训练/
-  - title: 语音交互
-    details: 语音套件、降噪和全双工打断。提纲已列，正文还在写。
-    link: /语音交互/
 ---
 
 <div class="home-map">
   <section>
-    <h2><a href="/agent设计/">智能体设计</a></h2>
+    <h2>
+      <a href="/agent设计/">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="12" r="2.25"/><circle cx="18" cy="6" r="2.25"/><circle cx="18" cy="18" r="2.25"/><path d="M8.2 11.1 15.8 7.2M8.2 12.9l7.6 4"/></svg>
+        <span>智能体设计</span>
+      </a>
+    </h2>
     <p class="lead">运行时怎么分层，图怎么流式、怎么同时接多台机器人。</p>
     <p class="label">运行时</p>
     <ul>
@@ -49,13 +32,32 @@ features:
   </section>
 
   <section>
-    <h2><a href="/LLM推理/">LLM 推理</a></h2>
+    <h2>
+      <a href="/语音交互/">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10v4M8 7v10M12 4v16M16 8v8M20 11v2"/></svg>
+        <span>语音交互</span>
+      </a>
+    </h2>
+    <p class="lead">正文还在写。</p>
+    <ul>
+      <li><a href="/语音交互/声学硬件结构">声学硬件结构</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>
+      <a href="/LLM推理/">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M9 3v3M12 3v3M15 3v3M9 18v3M12 18v3M15 18v3M3 9h3M3 12h3M3 15h3M18 9h3M18 12h3M18 15h3"/></svg>
+        <span>LLM 推理</span>
+      </a>
+    </h2>
     <p class="lead">服务端怎么跑，端侧边界在哪里。</p>
     <p class="label">服务端</p>
     <ul>
-      <li><a href="/LLM推理/vLLM推理">vLLM 推理</a></li>
-      <li><a href="/LLM推理/KV缓存与前缀缓存">KV 缓存与前缀缓存</a></li>
-      <li><a href="/LLM推理/Qwen3.5-4090性能">Qwen3.5-4090 性能</a></li>
+      <li><a href="/LLM推理/vLLM 的显存、Block 与并发调度">显存、Block 与并发</a></li>
+      <li><a href="/LLM推理/KV Cache 与 Prefix Caching 的调度流程">KV Cache 调度</a></li>
+      <li><a href="/LLM推理/Prefix Caching">Prefix Caching</a></li>
+      <li><a href="/LLM推理/Qwen3.8-27B并发压测报告">Qwen3.8-27B 压测</a></li>
     </ul>
     <p class="label">端侧</p>
     <ul>
@@ -66,19 +68,16 @@ features:
   </section>
 
   <section>
-    <h2><a href="/LLM训练/">LLM 训练</a></h2>
+    <h2>
+      <a href="/LLM训练/">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 12l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg>
+        <span>LLM 训练</span>
+      </a>
+    </h2>
     <p class="lead">分类和指令跟随各一篇，写的是怎么选数据和参数。</p>
     <ul>
       <li><a href="/LLM训练/BERT微调">BERT 微调</a></li>
       <li><a href="/LLM训练/LoRA微调">LoRA 微调</a></li>
-    </ul>
-  </section>
-
-  <section>
-    <h2><a href="/语音交互/">语音交互</a></h2>
-    <p class="lead">还没成稿。目录里目前只有编写提纲。</p>
-    <ul>
-      <li><a href="/语音交互/">硬件套件、降噪、全双工打断</a></li>
     </ul>
   </section>
 </div>
