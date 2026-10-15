@@ -59,9 +59,10 @@ export default withMermaid(defineConfig({
           { text: 'KV Cache 调度', link: '/LLM推理/KV Cache 与 Prefix Caching 的调度流程' },
           { text: 'Prefix Caching', link: '/LLM推理/Prefix Caching' },
           { text: 'Qwen3.8-27B 压测', link: '/LLM推理/Qwen3.8-27B并发压测报告' },
-          { text: 'RK3588 硬件', link: '/LLM推理/RK3588硬件' },
-          { text: 'RK3588 模型打包', link: '/LLM推理/RK3588模型打包' },
-          { text: 'Qwen3-VL 端侧性能', link: '/LLM推理/Qwen3-VL端侧性能' },
+          { text: 'MoE 与 Dense', link: '/LLM推理/MoE和Dense架构对比' },
+          { text: 'RK3588 与 RK1828', link: '/LLM推理/RK3588 与 RK1828 硬件架构' },
+          { text: 'RK3588 部署 LLM', link: '/LLM推理/RK3588 部署LLM' },
+          { text: 'Qwen3-VL 端侧性能', link: '/LLM推理/RK3588 Qwen3-VL端侧性能' },
         ],
       },
       {

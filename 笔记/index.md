@@ -38,7 +38,7 @@ hero:
         <span>语音交互</span>
       </a>
     </h2>
-    <p class="lead">正文还在写。</p>
+    <p class="lead">麦克风怎么选型，拾音孔、密封和喇叭隔离怎么做。</p>
     <ul>
       <li><a href="/语音交互/声学硬件结构">声学硬件结构</a></li>
     </ul>
@@ -58,12 +58,13 @@ hero:
       <li><a href="/LLM推理/KV Cache 与 Prefix Caching 的调度流程">KV Cache 调度</a></li>
       <li><a href="/LLM推理/Prefix Caching">Prefix Caching</a></li>
       <li><a href="/LLM推理/Qwen3.8-27B并发压测报告">Qwen3.8-27B 压测</a></li>
+      <li><a href="/LLM推理/MoE和Dense架构对比">MoE 与 Dense</a></li>
     </ul>
     <p class="label">端侧</p>
     <ul>
-      <li><a href="/LLM推理/RK3588硬件">RK3588 硬件</a></li>
-      <li><a href="/LLM推理/RK3588模型打包">RK3588 模型打包</a></li>
-      <li><a href="/LLM推理/Qwen3-VL端侧性能">Qwen3-VL 端侧性能</a></li>
+      <li><a href="/LLM推理/RK3588 与 RK1828 硬件架构">RK3588 与 RK1828</a></li>
+      <li><a href="/LLM推理/RK3588 部署LLM">RK3588 部署 LLM</a></li>
+      <li><a href="/LLM推理/RK3588 Qwen3-VL端侧性能">Qwen3-VL 端侧性能</a></li>
     </ul>
   </section>
 
