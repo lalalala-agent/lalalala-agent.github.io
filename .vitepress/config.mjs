@@ -23,6 +23,7 @@ export default withMermaid(defineConfig({
   themeConfig: {
     nav: [
       { text: '智能体设计', link: '/agent设计/' },
+      { text: '具身智能', link: '/具身智能/' },
       { text: '语音交互', link: '/语音交互/' },
       { text: 'LLM 推理', link: '/LLM推理/' },
       { text: 'LLM 训练', link: '/LLM训练/' },
@@ -45,10 +46,20 @@ export default withMermaid(defineConfig({
         ],
       },
       {
+        text: '具身智能',
+        link: '/具身智能/',
+        items: [
+          { text: 'Robot Agent', link: '/具身智能/robot agent设计' },
+          { text: '运动控制与电机驱动', link: '/具身智能/机器人运动控制与电机驱动架构' },
+        ],
+      },
+      {
         text: '语音交互',
         link: '/语音交互/',
         items: [
           { text: '声学硬件结构', link: '/语音交互/声学硬件结构' },
+          { text: '语音前端处理', link: '/语音交互/语音前端处理' },
+          { text: '语音交互流程', link: '/语音交互/语音交互流程' },
         ],
       },
       {
