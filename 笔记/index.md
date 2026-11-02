@@ -80,7 +80,7 @@ hero:
             <span>语音交互</span>
           </a>
         </h2>
-        <p class="lead">拾音结构、前端处理，以及唤醒到播报的整段状态。</p>
+        <p class="lead">拾音、前端和交互状态，以及 CosyVoice 里频谱怎么来、怎么还原。</p>
       </div>
       <div class="entries">
         <div class="group">
@@ -88,6 +88,8 @@ hero:
             <li><a href="/语音交互/声学硬件结构">声学硬件结构</a></li>
             <li><a href="/语音交互/语音前端处理">语音前端处理</a></li>
             <li><a href="/语音交互/语音交互流程">语音交互流程</a></li>
+            <li><a href="/语音交互/傅里叶变换">傅里叶变换</a></li>
+            <li><a href="/语音交互/cosyvoice">CosyVoice</a></li>
           </ul>
         </div>
       </div>
@@ -119,13 +121,16 @@ hero:
             <span>LLM 训练</span>
           </a>
         </h2>
-        <p class="lead">表情分类和领域指令，写的是数据和怎么训完交付。</p>
+        <p class="lead">从基础原理到微调，以及检索里的 Embedding 和 Rerank。</p>
       </div>
       <div class="entries">
         <div class="group">
           <ul>
+            <li><a href="/LLM训练/LLM基础原理">LLM 基础原理</a></li>
+            <li><a href="/LLM训练/BERT原理">BERT 原理</a></li>
             <li><a href="/LLM训练/BERT微调">BERT 微调</a></li>
             <li><a href="/LLM训练/LoRA微调">LoRA 微调</a></li>
+            <li><a href="/LLM训练/Embedding 与 Rerank">Embedding 与 Rerank</a></li>
           </ul>
         </div>
       </div>

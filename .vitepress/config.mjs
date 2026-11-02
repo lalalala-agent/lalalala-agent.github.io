@@ -60,6 +60,8 @@ export default withMermaid(defineConfig({
           { text: '声学硬件结构', link: '/语音交互/声学硬件结构' },
           { text: '语音前端处理', link: '/语音交互/语音前端处理' },
           { text: '语音交互流程', link: '/语音交互/语音交互流程' },
+          { text: '傅里叶变换', link: '/语音交互/傅里叶变换' },
+          { text: 'CosyVoice', link: '/语音交互/cosyvoice' },
         ],
       },
       {
@@ -80,8 +82,11 @@ export default withMermaid(defineConfig({
         text: 'LLM 训练',
         link: '/LLM训练/',
         items: [
+          { text: 'LLM 基础原理', link: '/LLM训练/LLM基础原理' },
+          { text: 'BERT 原理', link: '/LLM训练/BERT原理' },
           { text: 'BERT 微调', link: '/LLM训练/BERT微调' },
           { text: 'LoRA 微调', link: '/LLM训练/LoRA微调' },
+          { text: 'Embedding 与 Rerank', link: '/LLM训练/Embedding 与 Rerank' },
         ],
       },
     ],
